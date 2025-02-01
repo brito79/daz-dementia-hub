@@ -43,6 +43,30 @@ export const About = () => {
                 </p>
               </div>
             </div>
+
+            <div className="mt-16">
+              <h3 className="text-2xl font-bold text-daz-blue mb-8 text-center">
+                Our Founders
+              </h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="text-center">
+                  <div className="w-48 h-48 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+                    {/* Add founder image when available */}
+                    <div className="w-full h-full bg-gray-300" />
+                  </div>
+                  <h4 className="text-xl font-semibold text-daz-green">Founder Name</h4>
+                  <p className="text-gray-600">Co-Founder</p>
+                </div>
+                <div className="text-center">
+                  <div className="w-48 h-48 mx-auto mb-4 bg-gray-200 rounded-full overflow-hidden">
+                    {/* Add founder image when available */}
+                    <div className="w-full h-full bg-gray-300" />
+                  </div>
+                  <h4 className="text-xl font-semibold text-daz-green">Founder Name</h4>
+                  <p className="text-gray-600">Co-Founder</p>
+                </div>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>
