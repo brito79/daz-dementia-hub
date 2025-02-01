@@ -31,7 +31,7 @@ export const About = () => {
 
   return (
     <section id="about" className="py-20 bg-white relative">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/cc0af327-5046-4829-b281-d0a95299623b.png')] opacity-5 bg-center bg-no-repeat bg-contain" />
+      <div className="absolute inset-0 bg-[url('/lovable-uploads/b890f635-3137-4d7b-b5b6-dbd96e941d77.png')] opacity-5 bg-center bg-no-repeat bg-contain" />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
