@@ -24,7 +24,7 @@ export const About = () => {
       name: "Agnes Kuzviwanza",
       role: "Board Member",
       image: "/lovable-uploads/f21c3315-28d7-47a1-85b0-06bd3e8722b6.png",
-      description: "A dedicated board member bringing valuable expertise and insight to DAZ's mission of supporting those affected by dementia.",
+      description: "Possesses a vast banking skillset in risk management capability with presentation and reporting techniques, while maintaining sharp attention to detail. Extensive analysis of data to enhance bank operations, to build prognostic financial models which encompass crucial business process improvement, and innovative solutions. Supports effective utilization of bank systems including reports to prevent and reduce exposure to losses while maintaining cost effectiveness.",
     },
     {
       name: "Munyaradzi Maponga",
