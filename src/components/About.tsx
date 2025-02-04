@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export const About = () => {
-  const founders = [
+  const teamMembers = [
     {
       name: "Emelia Guba",
       role: "Co-Founder and Programs Manager",
@@ -21,10 +21,16 @@ export const About = () => {
       description: "A legal practitioner with over 20years experience Registered with the High Court of Zimbabwe, Law Society of Zimbabwe and IOBZ. An avid Human Rights Defender. Has a strong experience in various board membership and community engagement programs. Areas of interest include banking law, conveyancing, labour, human rights and juvenile justice. He possesses a Bachelor of Laws (Hons) and Masters in Constitutional and Human Rights Law.",
     },
     {
-      name: "Co-Founder",
-      role: "Risk Management Specialist",
+      name: "Agnes Kuzviwanza",
+      role: "Board Member",
       image: "/lovable-uploads/f21c3315-28d7-47a1-85b0-06bd3e8722b6.png",
-      description: "Possesses a vast banking skillset in risk management capability with presentation and reporting techniques, while maintaining sharp attention to detail. Extensive analysis of data to enhance bank operations, to build prognostic financial models which encompass crucial business process improvement, and innovative solutions. Supports effective utilization of bank systems including reports to prevent and reduce exposure to losses while maintaining cost effectiveness.",
+      description: "A dedicated board member bringing valuable expertise and insight to DAZ's mission of supporting those affected by dementia.",
+    },
+    {
+      name: "Munyaradzi Maponga",
+      role: "Board Treasurer",
+      image: "/lovable-uploads/b2ee79b5-8ffc-4cc1-930a-3e0b2eb3abb6.png",
+      description: "An enthusiastic Accounting and Finance Manager with drive, determination and 15+ years' experience working in a busy Accounting department providing support to top management. Highly competent in financial management and accounting, financial planning and analysis, budgeting and forecasting. Possessing excellent numerical & data entry skills along with a comprehensive understanding of commercial, administrative and accounting procedures. Well-presented, articulate and diplomatic individual capable of building and nurturing networks at executive and operational level. Has full CIS, SAAA, currently studying MSc Applied Accounting with GZU and is an Associate with CIS (ACIS).",
     },
   ];
 
@@ -39,11 +45,12 @@ export const About = () => {
       {backgroundImages.map((img, index) => (
         <div
           key={index}
-          className="absolute inset-0 bg-center bg-cover bg-no-repeat opacity-10 transition-opacity duration-1000"
+          className="absolute inset-0 bg-center bg-cover bg-no-repeat opacity-20 transition-opacity duration-1000"
           style={{
             backgroundImage: `url(${img})`,
             animation: `fade-background ${backgroundImages.length * 5}s infinite`,
             animationDelay: `${index * 5}s`,
+            zIndex: 0
           }}
         />
       ))}
@@ -101,8 +108,8 @@ export const About = () => {
               <h3 className="text-2xl font-bold text-daz-blue mb-8 text-center">
                 Our Team
               </h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                {founders.map((founder, index) => (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {teamMembers.map((member, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
@@ -114,18 +121,18 @@ export const About = () => {
                     <div className="flex flex-col items-center mb-4">
                       <div className="w-48 h-48 rounded-full overflow-hidden mb-4">
                         <img
-                          src={founder.image}
-                          alt={founder.name}
+                          src={member.image}
+                          alt={member.name}
                           className="w-full h-full object-cover"
                         />
                       </div>
                       <h4 className="text-xl font-semibold text-daz-green">
-                        {founder.name}
+                        {member.name}
                       </h4>
-                      <p className="text-gray-600 font-medium mb-4">{founder.role}</p>
+                      <p className="text-gray-600 font-medium mb-4">{member.role}</p>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      {founder.description}
+                      {member.description}
                     </p>
                   </motion.div>
                 ))}
