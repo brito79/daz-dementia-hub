@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 
 const images = [
   {
-    src: "/lovable-uploads/057d21f0-852d-42c9-b63b-2f68553686de.png",
-    alt: "Community engagement session",
+    src: "/lovable-uploads/30a098eb-a044-44da-b3d9-2b88554c3d6a.png",
+    alt: "Certificate presentation ceremony",
   },
   {
-    src: "/lovable-uploads/2426c938-a12e-437a-9499-7ce7ad12c78f.png",
-    alt: "Training and development workshop",
+    src: "/lovable-uploads/adf49173-eae2-45db-abff-7182dfeced9a.png",
+    alt: "Training workshop session",
   },
   {
     src: "/lovable-uploads/4a923a44-8031-4356-bb62-bf32b6b8cd76.png",
