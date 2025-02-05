@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 export const About = () => {
   const teamMembers = [
     {
-      name: "Emelia Guba",
-      role: "Co-Founder and Programs Manager",
+      name: "Emelia Gubba",
+      role: "Co-Founder",
       image: "/lovable-uploads/6e1ac777-304d-4c58-a76f-0134b3a72156.png",
       description: "Is passionate about humanitarian work with special interest in elderly care, has worked in the health sector and other related organisations. Holds qualifications in monitoring & evalution and Marketing.",
     },
     {
       name: "Heather Phiri",
-      role: "Co-Founder and Public Relations Manager",
+      role: "Co-Founder",
       image: "/lovable-uploads/35e7fc3d-1265-4fdd-8599-fdf2a05990d1.png",
       description: "An ambitious self-driven team player with humanity at heart. Is a qualified Food Science Technician, passionate in Communication and has vast knowledge in Health and Nutrition factors. Engages in Family Self-care Interventions.",
     },

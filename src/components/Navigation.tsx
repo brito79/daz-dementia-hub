@@ -1,4 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
+import { Button } from "./ui/button";
+import { MessageCircle } from "lucide-react";
 
 export const Navigation = () => {
   const location = useLocation();
@@ -12,8 +14,14 @@ export const Navigation = () => {
     { path: "/causes", label: "Causes" },
     { path: "/services", label: "Services" },
     { path: "/gallery", label: "Gallery" },
+    { path: "/membership", label: "Membership" },
+    { path: "/sponsorship", label: "Support Us" },
     { path: "/contact", label: "Contact" },
   ];
+
+  const handleWhatsAppClick = () => {
+    window.open(`https://wa.me/263783761575`, '_blank');
+  };
 
   return (
     <nav className="bg-white shadow-md">
@@ -26,7 +34,7 @@ export const Navigation = () => {
               className="h-10 w-10"
             />
           </Link>
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
             {links.map((link) => (
               <Link
                 key={link.path}
@@ -40,6 +48,13 @@ export const Navigation = () => {
                 {link.label}
               </Link>
             ))}
+            <Button
+              onClick={handleWhatsAppClick}
+              className="bg-green-500 hover:bg-green-600 text-white"
+            >
+              <MessageCircle className="mr-2 h-4 w-4" />
+              WhatsApp Us
+            </Button>
           </div>
         </div>
       </div>

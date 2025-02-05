@@ -12,6 +12,8 @@ import CausesPage from "./pages/CausesPage";
 import ServicesPage from "./pages/ServicesPage";
 import GalleryPage from "./pages/GalleryPage";
 import ContactPage from "./pages/ContactPage";
+import MembershipPage from "./pages/MembershipPage";
+import SponsorshipPage from "./pages/SponsorshipPage";
 import NotFound from "./pages/NotFound";
 
 const App = () => {
@@ -33,6 +35,8 @@ const App = () => {
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/gallery" element={<GalleryPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/membership" element={<MembershipPage />} />
+              <Route path="/sponsorship" element={<SponsorshipPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
