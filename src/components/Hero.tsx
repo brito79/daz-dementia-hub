@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="min-h-[80vh] flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-white to-gray-50">
       <div className="absolute inset-0 bg-[url('/lovable-uploads/02deffc1-6e2d-410a-a833-086ad2be5792.png')] opacity-5 bg-center bg-cover bg-no-repeat" />
@@ -29,13 +32,14 @@ export const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
+            className="space-y-4"
           >
-            <a
-              href="#about"
+            <button
+              onClick={() => navigate("/about")}
               className="inline-block bg-daz-green text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all duration-300"
             >
               Learn More
-            </a>
+            </button>
           </motion.div>
         </motion.div>
       </div>
