@@ -1,12 +1,41 @@
+
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { ChatAssistant } from "./ChatAssistant";
 
 export const Hero = () => {
   const navigate = useNavigate();
 
   return (
     <section className="min-h-[80vh] flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-white to-gray-50">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/02deffc1-6e2d-410a-a833-086ad2be5792.png')] opacity-5 bg-center bg-cover bg-no-repeat" />
+      {/* Dynamic Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/lovable-uploads/02deffc1-6e2d-410a-a833-086ad2be5792.png')] opacity-5 bg-center bg-cover bg-no-repeat" />
+        <div className="absolute inset-0">
+          {Array.from({ length: 20 }).map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute rounded-full bg-daz-blue/5"
+              style={{
+                width: Math.random() * 100 + 50,
+                height: Math.random() * 100 + 50,
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+              }}
+              animate={{
+                scale: [1, 1.2, 1],
+                opacity: [0.3, 0.5, 0.3],
+              }}
+              transition={{
+                duration: Math.random() * 3 + 2,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
+          ))}
+        </div>
+      </div>
+
       <div className="container mx-auto px-4 py-16 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -43,6 +72,9 @@ export const Hero = () => {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Chat Assistant */}
+      <ChatAssistant />
     </section>
   );
 };
