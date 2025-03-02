@@ -1,7 +1,7 @@
 
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
-import { MessageCircle, Menu, X } from "lucide-react";
+import { Globe, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useIsMobile } from "@/hooks/use-mobile";
 
@@ -63,7 +63,7 @@ export const Navigation = () => {
               onClick={handleWhatsAppClick}
               className="bg-green-500 hover:bg-green-600 text-white"
             >
-              <MessageCircle className="mr-2 h-4 w-4" />
+              <Globe className="mr-2 h-4 w-4" />
               WhatsApp Us
             </Button>
           </div>
@@ -111,7 +111,7 @@ export const Navigation = () => {
               }}
               className="w-full bg-green-500 hover:bg-green-600 text-white mt-2"
             >
-              <MessageCircle className="mr-2 h-4 w-4" />
+              <Globe className="mr-2 h-4 w-4" />
               WhatsApp Us
             </Button>
           </div>
