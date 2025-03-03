@@ -38,11 +38,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center">
             <div className="flex items-center space-x-2">
-              <img
-                src="/lovable-uploads/2cc117a5-2e72-4a68-9375-6243c2b5e6fb.png"
-                alt="DAZ Logo"
-                className="h-10 w-10"
-              />
+              <Globe className="h-8 w-8 text-daz-green" />
               <span className="text-lg font-semibold text-daz-green">DAZ Dementia</span>
             </div>
           </Link>
