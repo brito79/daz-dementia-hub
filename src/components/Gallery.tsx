@@ -1,40 +1,41 @@
 import { motion } from "framer-motion";
+import { Footer } from "./Footer";
 
 const images = [
   {
-    src: "/lovable-uploads/30a098eb-a044-44da-b3d9-2b88554c3d6a.png",
+    src: "/assets/30a098eb-a044-44da-b3d9-2b88554c3d6a.png",
     alt: "Certificate presentation ceremony",
   },
   {
-    src: "/lovable-uploads/adf49173-eae2-45db-abff-7182dfeced9a.png",
+    src: "/assets/adf49173-eae2-45db-abff-7182dfeced9a.png",
     alt: "Training workshop session",
   },
   {
-    src: "/lovable-uploads/4a923a44-8031-4356-bb62-bf32b6b8cd76.png",
+    src: "/assets/4a923a44-8031-4356-bb62-bf32b6b8cd76.png",
     alt: "Support group meeting",
   },
   {
-    src: "/lovable-uploads/335dc46b-a315-4fea-89f2-a3fe11e40580.png",
+    src: "/assets/335dc46b-a315-4fea-89f2-a3fe11e40580.png",
     alt: "Workshop presentation",
   },
   {
-    src: "/lovable-uploads/7ec38b72-3d14-4e4a-9cd2-d97757f7812e.png",
+    src: "/assets/7ec38b72-3d14-4e4a-9cd2-d97757f7812e.png",
     alt: "Training session",
   },
   {
-    src: "/lovable-uploads/8794d119-351e-4874-bbb7-e74674c999a4.png",
+    src: "/assets/8794d119-351e-4874-bbb7-e74674c999a4.png",
     alt: "Community education program",
   },
   {
-    src: "/lovable-uploads/89db5d46-687f-446e-891d-09275399017f.png",
+    src: "/assets/89db5d46-687f-446e-891d-09275399017f.png",
     alt: "Community members attending workshop",
   },
   {
-    src: "/lovable-uploads/fcbfaf84-acab-4a2d-8d5f-34291b35f96c.png",
+    src: "/assets/fcbfaf84-acab-4a2d-8d5f-34291b35f96c.png",
     alt: "Training and education session",
   },
   {
-    src: "/lovable-uploads/0437153c-a3d5-481c-b3c2-fb46be3a3377.png",
+    src: "/assets/0437153c-a3d5-481c-b3c2-fb46be3a3377.png",
     alt: "DAZ outreach event",
   },
 ];
@@ -80,6 +81,7 @@ export const Gallery = () => {
           </div>
         </motion.div>
       </div>
+      <Footer />
     </section>
   );
 };

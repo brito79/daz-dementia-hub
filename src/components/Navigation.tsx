@@ -16,7 +16,7 @@ export const Navigation = () => {
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
     { path: "/symptoms", label: "Symptoms" },
-    { path: "/causes", label: "Causes" },
+    { path: "/causes", label: "Risk Factors" },
     { path: "/services", label: "Services" },
     { path: "/gallery", label: "Gallery" },
     { path: "/membership", label: "Membership" },

@@ -13,7 +13,7 @@ const services = [
 export const Services = () => {
   return (
     <section className="py-20 bg-gray-50 relative">
-      <div className="absolute inset-0 bg-[url('/lovable-uploads/af99ef30-a2e1-4803-befd-edeea4a14451.png')] opacity-5 bg-center bg-cover bg-no-repeat" />
+      <div className="absolute inset-0 bg-[url('/assets/af99ef30-a2e1-4803-befd-edeea4a14451.png')] opacity-5 bg-center bg-cover bg-no-repeat" />
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

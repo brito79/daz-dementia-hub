@@ -5,43 +5,43 @@ export const About = () => {
     {
       name: "Emelia Gubba",
       role: "Co-Founder",
-      image: "/lovable-uploads/6e1ac777-304d-4c58-a76f-0134b3a72156.png",
+      image: "/assets/6e1ac777-304d-4c58-a76f-0134b3a72156.png",
       description: "Is passionate about humanitarian work with special interest in elderly care, has worked in the health sector and other related organisations. Holds qualifications in monitoring & evalution and Marketing.",
     },
     {
       name: "Heather Phiri",
       role: "Co-Founder",
-      image: "/lovable-uploads/35e7fc3d-1265-4fdd-8599-fdf2a05990d1.png",
+      image: "/assets/35e7fc3d-1265-4fdd-8599-fdf2a05990d1.png",
       description: "An ambitious self-driven team player with humanity at heart. Is a qualified Food Science Technician, passionate in Communication and has vast knowledge in Health and Nutrition factors. Engages in Family Self-care Interventions.",
     },
     {
       name: "Hilary Garikayi",
       role: "Board Chairperson",
-      image: "/lovable-uploads/5eb0d34d-010f-4cde-b76a-cdac603d1b4f.png",
+      image: "/assets/5eb0d34d-010f-4cde-b76a-cdac603d1b4f.png",
       description: "A legal practitioner with over 20years experience Registered with the High Court of Zimbabwe, Law Society of Zimbabwe and IOBZ. An avid Human Rights Defender. Has a strong experience in various board membership and community engagement programs. Areas of interest include banking law, conveyancing, labour, human rights and juvenile justice. He possesses a Bachelor of Laws (Hons) and Masters in Constitutional and Human Rights Law.",
     },
     {
       name: "Agnes Kuzviwanza",
       role: "Board Member",
-      image: "/lovable-uploads/f21c3315-28d7-47a1-85b0-06bd3e8722b6.png",
+      image: "/assets/f21c3315-28d7-47a1-85b0-06bd3e8722b6.png",
       description: "Possesses a vast banking skillset in risk management capability with presentation and reporting techniques, while maintaining sharp attention to detail. Extensive analysis of data to enhance bank operations, to build prognostic financial models which encompass crucial business process improvement, and innovative solutions. Supports effective utilization of bank systems including reports to prevent and reduce exposure to losses while maintaining cost effectiveness.",
     },
     {
       name: "Munyaradzi Maponga",
       role: "Board Treasurer",
-      image: "/lovable-uploads/b2ee79b5-8ffc-4cc1-930a-3e0b2eb3abb6.png",
+      image: "/assets/b2ee79b5-8ffc-4cc1-930a-3e0b2eb3abb6.png",
       description: "An enthusiastic Accounting and Finance Manager with drive, determination and 15+ years' experience working in a busy Accounting department providing support to top management. Highly competent in financial management and accounting, financial planning and analysis, budgeting and forecasting. Possessing excellent numerical & data entry skills along with a comprehensive understanding of commercial, administrative and accounting procedures. Well-presented, articulate and diplomatic individual capable of building and nurturing networks at executive and operational level. Has full CIS, SAAA, currently studying MSc Applied Accounting with GZU and is an Associate with CIS (ACIS).",
     },
   ];
 
   const backgroundImages = [
-    "/lovable-uploads/057d21f0-852d-42c9-b63b-2f68553686de.png",
-    "/lovable-uploads/2426c938-a12e-437a-9499-7ce7ad12c78f.png",
-    "/lovable-uploads/dd0eff45-ceb3-420a-9dcd-4e6fc3e243a7.png"
+    "/assets/057d21f0-852d-42c9-b63b-2f68553686de.png",
+    "/assets/2426c938-a12e-437a-9499-7ce7ad12c78f.png",
+    "/assets/dd0eff45-ceb3-420a-9dcd-4e6fc3e243a7.png"
   ];
 
   return (
-    <section id="about" className="py-20 bg-white relative">
+    <section id="about" className="py-20 bg-white relative rounded-lg">
       {backgroundImages.map((img, index) => (
         <div
           key={index}
@@ -145,7 +145,7 @@ export const About = () => {
               </h3>
               <div className="flex items-center justify-center gap-4 bg-white/80 backdrop-blur-sm p-6 rounded-lg">
                 <img
-                  src="/lovable-uploads/cc0af327-5046-4829-b281-d0a95299623b.png"
+                  src="/assets/cc0af327-5046-4829-b281-d0a95299623b.png"
                   alt="Ministry of Health and Childcare Zimbabwe"
                   className="h-24 object-contain"
                 />
