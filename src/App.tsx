@@ -15,6 +15,8 @@ import ContactPage from "./pages/ContactPage";
 import MembershipPage from "./pages/MembershipPage";
 import SponsorshipPage from "./pages/SponsorshipPage";
 import FooterPage from "./pages/FooterPage";
+import LoginPage from "./pages/(auth)/login/page";
+import SignupPage from "./pages/(auth)/signup/page";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -26,7 +28,7 @@ const App = () => {
         <Sonner />
         <BrowserRouter>
           <Navigation />
-          <main className="pt-16 mx-2">
+          <main className="pt-16 lg:mx-6">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<AboutUs />} />
@@ -38,6 +40,9 @@ const App = () => {
               <Route path="/membership" element={<MembershipPage />} />
               <Route path="/sponsorship" element={<SponsorshipPage />} />
               <Route path="/footer" element={<FooterPage />} />
+              <Route path="/faq" element={<FooterPage />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/signup" element={<SignupPage />} />
             </Routes>
           </main>
         </BrowserRouter>

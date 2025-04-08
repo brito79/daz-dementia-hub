@@ -5,25 +5,25 @@ export const Causes = () => {
   const causes = [
     {
       title: "Age",
-      description: "The risk increases significantly with age, especially after 65",
+      description: "The risk increases significantly with age, especially after 65. As people age, the brain undergoes changes that may contribute to the development of dementia.",
     },
     {
       title: "Family History",
-      description: "Genetic factors can increase the likelihood of developing dementia",
+      description: "Genetic factors can increase the likelihood of developing dementia. Having a parent or sibling with dementia may raise your risk, though lifestyle and environment also play a role.",
     },
     {
       title: "Cardiovascular Health",
-      description: "High blood pressure, heart disease, and stroke can contribute to dementia",
+      description: "High blood pressure, heart disease, and stroke can contribute to dementia. Poor cardiovascular health reduces blood flow to the brain, which can lead to cognitive decline over time.",
     },
     {
       title: "Lifestyle Factors",
-      description: "Smoking, excessive alcohol use, and lack of physical activity",
+      description: "Smoking, excessive alcohol use, and lack of physical activity are linked to an increased risk of dementia. Maintaining a healthy lifestyle can help protect brain health and reduce risk.",
     },
   ];
 
   return (
     <section
-      className="py-20 bg-white"
+      className="py-20 bg-white rounded-lg shadow-lg filter backdrop-blur-sm"
       style={{
       backgroundImage: `url(${background_first})`,
       backgroundSize: "cover",

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Footer } from "./Footer";
 
 export const About = () => {
   const teamMembers = [
@@ -41,7 +42,8 @@ export const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white relative rounded-lg">
+    <>
+    <section id="about" className="py-20 bg-white relative filter backdrop-blur-sm rounded-lg border border-black/10">
       {backgroundImages.map((img, index) => (
         <div
           key={index}
@@ -105,7 +107,7 @@ export const About = () => {
             </div>
 
             <div className="mt-16">
-              <h3 className="text-2xl font-bold text-daz-blue mb-8 text-center">
+              <h3 className="text-3xl font-bold text-daz-blue mb-8 text-center">
                 Our Team
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -119,7 +121,7 @@ export const About = () => {
                     className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
                   >
                     <div className="flex flex-col items-center mb-4">
-                      <div className="w-48 h-48 rounded-full overflow-hidden mb-4">
+                      <div className="w-48 h-50 rounded-full overflow-hidden mb-2">
                         <img
                           src={member.image}
                           alt={member.name}
@@ -140,23 +142,24 @@ export const About = () => {
             </div>
 
             <div className="mt-16 text-center">
-              <h3 className="text-2xl font-bold text-daz-blue mb-4">
+              <h3 className="text-3xl font-bold text-daz-blue mb-4">
                 Our Partnership
               </h3>
-              <div className="flex items-center justify-center gap-4 bg-white/80 backdrop-blur-sm p-6 rounded-lg">
+                <div className="flex items-center justify-center gap-6 bg-white/80 backdrop-blur-sm p-6 rounded-lg">
                 <img
-                  src="/assets/cc0af327-5046-4829-b281-d0a95299623b.png"
+                  src="/assets/partnership_one.png"
                   alt="Ministry of Health and Childcare Zimbabwe"
-                  className="h-24 object-contain"
+                  className="h-24 object-contain rounded-full"
                 />
                 <p className="text-gray-600">
                   In partnership with the Ministry of Health and Childcare Zimbabwe
                 </p>
-              </div>
+                </div>
             </div>
           </div>
         </motion.div>
       </div>
     </section>
+    </>
   );
 };

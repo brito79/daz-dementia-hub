@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
 const services = [
-  "Counselling for affected family members and caregivers",
-  "Home visits and assessment",
-  "Linkage to care for dementia patients",
-  "Support and resources for caregivers",
-  "Awareness campaigns",
-  "Research and advocacy",
+  "Counselling for affected family members and caregivers: Providing emotional support, coping strategies, and guidance to help families navigate the challenges of dementia.",
+  "Home visits and assessment: Conducting personalized evaluations and offering tailored recommendations to improve the quality of life for dementia patients.",
+  "Linkage to care for dementia patients: Connecting patients with specialized healthcare providers, support groups, and community resources.",
+  "Support and resources for caregivers: Offering training, educational materials, and ongoing assistance to empower caregivers in their role.",
+  "Awareness campaigns: Organizing events, workshops, and media outreach to educate the public about dementia and reduce stigma.",
+  "Research and advocacy: Promoting studies on dementia care and advocating for policies that support patients and their families.",
 ];
 
 export const Services = () => {

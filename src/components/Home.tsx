@@ -5,19 +5,37 @@ import { ChatAssistant } from "./ChatAssistant";
 import bg_home from "/assets/bg_hero.jpg";
 import AboutUs from "@/pages/AboutUs";
 import { Footer } from "./Footer";
+import { Causes } from "./Causes";
+import { MembershipForm } from "./MembershipForm";
+import MembershipPage from "@/pages/MembershipPage";
+import FaQ from "./FaQ";
 
 export const Home = () => {
   const navigate = useNavigate();
 
   return (
     <>
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-daz-blue/5"
+    <section className="bg-gradient-to-br from-purple-500 to-blue-500 bg-center bg-cover h-screen relative min-h-screen flex items-center justify-center overflow-hidden bg-daz-blue/5 rounded-lg shadow-lg">
+    {/*
     style={{
       backgroundImage: `url(${bg_home})`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      }}>
-      <div className="container mx-auto px-4 py-16 relative z-10">
+      }}
+    */}
+    {/* Arc SVG */}
+    <svg
+        className="absolute bottom-0 w-full"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#ffffff"
+          fillOpacity="1"
+          d="M0,160L48,144C96,128,192,96,288,80C384,64,480,64,576,80C672,96,768,128,864,144C960,160,1056,160,1152,128C1248,96,1344,48,1392,24L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+      <div className="container mx-auto px-4 py-2 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -93,7 +111,10 @@ export const Home = () => {
       </div>
       {/* */}
         </section>
+        <Causes />
         <AboutUs />
+        <MembershipPage />
+        <FaQ />
         <Footer />
 
         </>
