@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Route, createBrowserRouter, RouterProvider, createRoutesFromElements } from "react-router-dom";
 import { useState } from "react";
 import { Navigation } from "./components/Navigation";
 import Home from "./pages/HomePage";
@@ -17,17 +17,37 @@ import SponsorshipPage from "./pages/SponsorshipPage";
 import FooterPage from "./pages/FooterPage";
 import LoginPage from "./pages/(auth)/login/page";
 import SignupPage from "./pages/(auth)/signup/page";
-import { Footer } from "./components/Footer";
+import RootLayout from "./layout/RootLayout";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<AboutUs />} />
+        <Route path="symptoms" element={<SymptomsPage />} />
+        <Route path="causes" element={<CausesPage />} />
+        <Route path="services" element={<ServicesPage />} />
+        <Route path="gallery" element={<GalleryPage />} />
+        <Route path="contact" element={<ContactPage />} />
+        <Route path="membership" element={<MembershipPage />} />
+        <Route path="sponsorship" element={<SponsorshipPage />} />
+        <Route path="footer" element={<FooterPage />} />
+        <Route path="faq" element={<FooterPage />} />
+        <Route path="login" element={<LoginPage />} />
+        <Route path="signup" element={<SignupPage />} />
+        </Route>
+        )
+    );
 
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        {/* <BrowserRouter>
           <Navigation />
           <main className="pt-16 lg:mx-6">
             <Routes>
@@ -45,9 +65,12 @@ const App = () => {
               <Route path="/login" element={<LoginPage />} />
               <Route path="/signup" element={<SignupPage />} />
             </Routes>
-          </main>
-          <Footer />
-        </BrowserRouter>
+          </main> */}
+          {/* <Footer />
+        </BrowserRouter> */}
+        <main className="pt-16 lg:mx-6">
+        <RouterProvider router={router} />
+        </main>
       </TooltipProvider>
     </QueryClientProvider>
   );
