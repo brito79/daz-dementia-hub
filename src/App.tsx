@@ -18,6 +18,7 @@ import FooterPage from "./pages/FooterPage";
 import LoginPage from "./pages/(auth)/login/page";
 import SignupPage from "./pages/(auth)/signup/page";
 import RootLayout from "./layout/RootLayout";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="faq" element={<FooterPage />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="signup" element={<SignupPage />} />
+        <Route path="*" element={<NotFound/>} />
         </Route>
         )
     );
