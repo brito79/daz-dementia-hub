@@ -43,7 +43,7 @@ export const About = () => {
 
   return (
     <>
-    <section id="about" className="py-20 bg-white relative filter backdrop-blur-sm rounded-lg border border-black/10">
+    <section className="py-20 bg-white relative filter backdrop-blur-sm rounded-lg border border-black/10">
       {backgroundImages.map((img, index) => (
         <div
           key={index}

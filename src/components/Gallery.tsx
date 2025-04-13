@@ -100,7 +100,6 @@ export const Gallery = () => {
       </div>
       
     </section>
-    <Footer />
     </>
 
   );

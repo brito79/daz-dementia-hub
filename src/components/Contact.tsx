@@ -58,7 +58,6 @@ export const Contact = () => {
       </motion.div>
       </div>
     </section>
-    <Footer/>
     </>
   );
 };

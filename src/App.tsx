@@ -17,6 +17,7 @@ import SponsorshipPage from "./pages/SponsorshipPage";
 import FooterPage from "./pages/FooterPage";
 import LoginPage from "./pages/(auth)/login/page";
 import SignupPage from "./pages/(auth)/signup/page";
+import { Footer } from "./components/Footer";
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -45,6 +46,7 @@ const App = () => {
               <Route path="/signup" element={<SignupPage />} />
             </Routes>
           </main>
+          <Footer />
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

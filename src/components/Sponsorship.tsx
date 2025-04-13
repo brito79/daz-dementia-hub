@@ -151,7 +151,6 @@ export const Sponsorship = () => {
         </motion.div>
       </div>
       </section>
-      <Footer />
     </>
   );
 };

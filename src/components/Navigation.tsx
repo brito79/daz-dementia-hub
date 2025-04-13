@@ -44,7 +44,7 @@ export const Navigation = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4 shadow-[0_4px_0_0_rgb(229,231,235)] rounded-md p-2">
             {links.map((link) => (
               <Link
                 key={link.path}

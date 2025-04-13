@@ -115,8 +115,6 @@ export const Home = () => {
         <AboutUs />
         <MembershipPage />
         <FaQ />
-        <Footer />
-
         </>
   );
 };

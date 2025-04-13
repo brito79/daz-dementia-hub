@@ -1,69 +1,104 @@
-# Welcome to your Lovable project
+# Dementia Awareness Website (DAZ)
 
-## Project info
+## About the Project
+The **Dementia Association of Zimbabwe (DAZ)** website is designed to create awareness and advocate for the prevention, diagnosis, treatment, and management of dementia. The site aims to diminish stigma, provide resources for caregivers and families, and support ongoing research efforts.
 
-**URL**: https://lovable.dev/projects/d00c0b5d-ef78-48fb-98d0-903e0ec00e00
+## Features
+- Informative content about dementia, including awareness campaigns, objectives, and research initiatives.
+- Services like counseling and home visits for families and caregivers.
+- Fundraising page to support DAZ's programs and initiatives.
+- User-friendly interface with responsive design for optimal accessibility across devices.
 
-## How can I edit this code?
+## Tech Stack
+This project is built with:
+- **Framework:** [Next.js](https://nextjs.org/) (version 15.3)
+- **Language:** TypeScript
+- **Styling:** TailwindCSS
+- **State Management:** React Context API
+- **Hosting:** Vercel
+- **Other Tools:** Google Analytics, SEO meta tags for search engine optimization
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Prerequisites
+- Node.js (version 18 or higher)
+- npm or yarn package manager
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d00c0b5d-ef78-48fb-98d0-903e0ec00e00) and start prompting.
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/daz-dementia-awareness-hub.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd daz-dementia-awareness-hub
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Create a `.env` file in the project root and add the necessary environment variables:
+   ```plaintext
+   VITE_API_URL=https://api.example.com
+   VITE_APP_SECRET=supersecretkey123
+   ```
 
-Changes made via Lovable will be committed automatically to this repo.
+## Usage
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### Development Server
+Run the local development server:
+```bash
 npm run dev
 ```
+The site will be available at `http://localhost:8080`.
 
-**Edit a file directly in GitHub**
+### Build
+To create an optimized production build:
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Project Structure
+```
+dementia-awareness/
+├── public/              # Static assets (images, logos, etc.)
+├── src/
+│   ├── components/      # Reusable React components
+│   ├── pages/           # Next.js pages for routing
+│   ├── styles/          # Styling (global and page-specific)
+│   ├── utils/           # Helper functions (e.g., API calls)
+│   ├── types/           # TypeScript type definitions
+│   ├── contexts/        # State management files
+├── .env                 # Environment variables
+├── package.json         # Project metadata and dependencies
+├── tsconfig.json        # TypeScript configuration
+├── next.config.js       # Next.js configuration
+```
 
-**Use GitHub Codespaces**
+## Contributions
+We welcome contributions to enhance the website and its impact. Here's how you can help:
+1. Fork the project.
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add Your Feature Description"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+5. Open a Pull Request.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## License
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d00c0b5d-ef78-48fb-98d0-903e0ec00e00) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## Contact
+For any inquiries, feel free to reach out:
+- **Email:** [info@dementiaassociationzim.org](mailto:info@dementiaassociationzim.org)
+- **WhatsApp:** +263 783 146 211
+- **Social Media:**
+  - [Facebook](https://facebook.com/dementiaassociationzim)
+  - [Twitter](https://twitter.com/DementiaAss-Zim)

@@ -102,7 +102,6 @@ export const Symptoms = () => {
         </motion.div>
       </div>
     </section>
-    <Footer/>
     </>
   );
 };
