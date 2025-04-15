@@ -4,7 +4,6 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Route, createBrowserRouter, RouterProvider, createRoutesFromElements } from "react-router-dom";
 import { useState } from "react";
-import { Navigation } from "./components/Navigation";
 import Home from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
 import SymptomsPage from "./pages/SymptomsPage";
@@ -19,6 +18,10 @@ import LoginPage from "./pages/(auth)/login/page";
 import SignupPage from "./pages/(auth)/signup/page";
 import RootLayout from "./layout/RootLayout";
 import NotFound from "./pages/NotFound";
+import GalleryItem, { galleryLoader } from "./pages/GalleryItem";
+import { Gallery } from "./components/Gallery";
+import RootGalleryLayout from "./layout/RootGalleryLayout";
+
 
 const App = () => {
   const [queryClient] = useState(() => new QueryClient());
@@ -31,7 +34,14 @@ const App = () => {
         <Route path="symptoms" element={<SymptomsPage />} />
         <Route path="causes" element={<CausesPage />} />
         <Route path="services" element={<ServicesPage />} />
-        <Route path="gallery" element={<GalleryPage />} />
+        <Route path="gall" element={<RootGalleryLayout />}>
+          <Route index element={<GalleryItem />} loader={galleryLoader}/>
+          {/* <Route path=":galleryItemId" element={<GalleryItem />} /> */}
+          {/* <Route path="items" element={<RootGallery />} />
+          <Route path="items/:galleryItemId" element={<GalleryItem />} />
+          <Route path="items/:galleryItemId" element={<GalleryItem />} />
+          <Route path="items/:galleryItemId" element={<GalleryItem />} /> */}
+          </Route>
         <Route path="contact" element={<ContactPage />} />
         <Route path="membership" element={<MembershipPage />} />
         <Route path="sponsorship" element={<SponsorshipPage />} />
@@ -40,7 +50,7 @@ const App = () => {
         <Route path="login" element={<LoginPage />} />
         <Route path="signup" element={<SignupPage />} />
         <Route path="*" element={<NotFound/>} />
-        </Route>
+      </Route>
         )
     );
 
@@ -79,3 +89,13 @@ const App = () => {
 };
 
 export default App;
+
+
+
+
+
+
+
+
+
+

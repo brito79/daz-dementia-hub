@@ -1,0 +1,34 @@
+{
+    "dementia": [
+        {
+            "id": "1",
+            "title": "Understanding Dementia",
+            "description": "An overview of dementia, its types, and how it affects the brain.",
+            "date": "2023-10-15"
+        },
+        {
+            "id": "2",
+            "title": "Early Signs of Dementia",
+            "description": "Learn about the early warning signs and symptoms of dementia.",
+            "date": "2023-10-20"
+        },
+        {
+            "id": "3",
+            "title": "Caring for Someone with Dementia",
+            "description": "Tips and strategies for providing care to individuals living with dementia.",
+            "date": "2023-10-25"
+        },
+        {
+            "id": "4",
+            "title": "Latest Research in Dementia Treatment",
+            "description": "Recent breakthroughs and ongoing studies in dementia treatment and prevention.",
+            "date": "2023-11-05"
+        },
+        {
+            "id": "5",
+            "title": "Dementia Support Resources",
+            "description": "Directory of resources and support groups for patients and caregivers.",
+            "date": "2023-11-10"
+        }
+    ]
+}
