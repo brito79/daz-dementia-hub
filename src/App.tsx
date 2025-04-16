@@ -19,8 +19,10 @@ import SignupPage from "./pages/(auth)/signup/page";
 import RootLayout from "./layout/RootLayout";
 import NotFound from "./pages/NotFound";
 import GalleryItem, { galleryLoader } from "./pages/GalleryItem";
-import { Gallery } from "./components/Gallery";
 import RootGalleryLayout from "./layout/RootGalleryLayout";
+import GalleryItemDetails, { galleryItemDetailsLoader } from "./pages/GalleryItemDetails";
+import ErrorComponent from "./pages/ErrorComponent";
+
 
 
 const App = () => {
@@ -34,14 +36,14 @@ const App = () => {
         <Route path="symptoms" element={<SymptomsPage />} />
         <Route path="causes" element={<CausesPage />} />
         <Route path="services" element={<ServicesPage />} />
-        <Route path="gall" element={<RootGalleryLayout />}>
+        <Route path="gallery" element={<GalleryPage />} />
+        <Route path="gallitems" element={<RootGalleryLayout />}  errorElement={<ErrorComponent/>}>
           <Route index element={<GalleryItem />} loader={galleryLoader}/>
-          {/* <Route path=":galleryItemId" element={<GalleryItem />} /> */}
-          {/* <Route path="items" element={<RootGallery />} />
+          <Route path=":id" element={<GalleryItemDetails />} loader={galleryItemDetailsLoader}/>
           <Route path="items/:galleryItemId" element={<GalleryItem />} />
           <Route path="items/:galleryItemId" element={<GalleryItem />} />
-          <Route path="items/:galleryItemId" element={<GalleryItem />} /> */}
-          </Route>
+          <Route path="items/:galleryItemId" element={<GalleryItem />} />
+        </Route>
         <Route path="contact" element={<ContactPage />} />
         <Route path="membership" element={<MembershipPage />} />
         <Route path="sponsorship" element={<SponsorshipPage />} />
@@ -59,27 +61,6 @@ const App = () => {
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        {/* <BrowserRouter>
-          <Navigation />
-          <main className="pt-16 lg:mx-6">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<AboutUs />} />
-              <Route path="/symptoms" element={<SymptomsPage />} />
-              <Route path="/causes" element={<CausesPage />} />
-              <Route path="/services" element={<ServicesPage />} />
-              <Route path="/gallery" element={<GalleryPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/membership" element={<MembershipPage />} />
-              <Route path="/sponsorship" element={<SponsorshipPage />} />
-              <Route path="/footer" element={<FooterPage />} />
-              <Route path="/faq" element={<FooterPage />} />
-              <Route path="/login" element={<LoginPage />} />
-              <Route path="/signup" element={<SignupPage />} />
-            </Routes>
-          </main> */}
-          {/* <Footer />
-        </BrowserRouter> */}
         <main className="pt-16 lg:mx-6">
         <RouterProvider router={router} />
         </main>
