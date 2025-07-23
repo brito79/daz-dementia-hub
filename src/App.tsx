@@ -22,6 +22,7 @@ import GalleryItemDetails, { galleryItemDetailsLoader } from "./pages/GalleryIte
 import ErrorComponent from "./pages/ErrorComponent";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
+import YoungOnsetDementiaPage from "./pages/YoungOnsetDementiaPage";
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="about" element={<AboutUs />} />
         <Route path="symptoms" element={<SymptomsPage />} />
         <Route path="causes" element={<CausesPage />} />
+        <Route path="young-onset-dementia" element={<YoungOnsetDementiaPage />} />
         <Route path="services" element={<ServicesPage />} />
         <Route path="gallery" element={<GalleryPage />} />
 

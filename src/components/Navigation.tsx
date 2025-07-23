@@ -22,6 +22,7 @@ export const Navigation = () => {
     { path: "/", label: "Home" },
     { path: "/about", label: "About Us" },
     { path: "/symptoms", label: "Symptoms" },
+    { path: "/young-onset-dementia", label: "Drug Abuse & Dementia" },
     // { path: "/causes", label: "Risk Factors" },
     { path: "/services", label: "Services" },
     { path: "/gallery", label: "Gallery" },
