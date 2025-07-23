@@ -22,12 +22,6 @@ export const About = () => {
       description: "A legal practitioner with over 20years experience Registered with the High Court of Zimbabwe, Law Society of Zimbabwe and IOBZ. An avid Human Rights Defender. Has a strong experience in various board membership and community engagement programs. Areas of interest include banking law, conveyancing, labour, human rights and juvenile justice. He possesses a Bachelor of Laws (Hons) and Masters in Constitutional and Human Rights Law.",
     },
     {
-      name: "Agnes Kuzviwanza",
-      role: "Board Member",
-      image: "/assets/f21c3315-28d7-47a1-85b0-06bd3e8722b6.png",
-      description: "Possesses a vast banking skillset in risk management capability with presentation and reporting techniques, while maintaining sharp attention to detail. Extensive analysis of data to enhance bank operations, to build prognostic financial models which encompass crucial business process improvement, and innovative solutions. Supports effective utilization of bank systems including reports to prevent and reduce exposure to losses while maintaining cost effectiveness.",
-    },
-    {
       name: "Munyaradzi Maponga",
       role: "Board Treasurer",
       image: "/assets/b2ee79b5-8ffc-4cc1-930a-3e0b2eb3abb6.png",
