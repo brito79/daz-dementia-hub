@@ -14,14 +14,14 @@ import ContactPage from "./pages/ContactPage";
 import MembershipPage from "./pages/MembershipPage";
 import SponsorshipPage from "./pages/SponsorshipPage";
 import FooterPage from "./pages/FooterPage";
-import LoginPage from "./pages/(auth)/login/page";
-import SignupPage from "./pages/(auth)/signup/page";
 import RootLayout from "./layout/RootLayout";
 import NotFound from "./pages/NotFound";
 import GalleryItem, { galleryLoader } from "./pages/GalleryItem";
 import RootGalleryLayout from "./layout/RootGalleryLayout";
 import GalleryItemDetails, { galleryItemDetailsLoader } from "./pages/GalleryItemDetails";
 import ErrorComponent from "./pages/ErrorComponent";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
 
 
 
@@ -37,20 +37,27 @@ const App = () => {
         <Route path="causes" element={<CausesPage />} />
         <Route path="services" element={<ServicesPage />} />
         <Route path="gallery" element={<GalleryPage />} />
+
+        {/**Image routes */}
         <Route path="gallitems" element={<RootGalleryLayout />}  errorElement={<ErrorComponent/>}>
           <Route index element={<GalleryItem />} loader={galleryLoader}/>
           <Route path=":id" element={<GalleryItemDetails />} loader={galleryItemDetailsLoader}/>
-          <Route path="items/:galleryItemId" element={<GalleryItem />} />
-          <Route path="items/:galleryItemId" element={<GalleryItem />} />
-          <Route path="items/:galleryItemId" element={<GalleryItem />} />
+          <Route path="image/:id" element={<GalleryItem />} />
+          
         </Route>
+
+        {/**login and sign up pages */}
+        <Route path="/auth/login" element={<LoginPage />} />
+        <Route path="/auth/signup" element={<SignupPage />} />
+
+        {/**site navigation */}
         <Route path="contact" element={<ContactPage />} />
         <Route path="membership" element={<MembershipPage />} />
         <Route path="sponsorship" element={<SponsorshipPage />} />
         <Route path="footer" element={<FooterPage />} />
         <Route path="faq" element={<FooterPage />} />
-        <Route path="login" element={<LoginPage />} />
-        <Route path="signup" element={<SignupPage />} />
+
+        {/**Universal error handler */}
         <Route path="*" element={<NotFound/>} />
       </Route>
         )

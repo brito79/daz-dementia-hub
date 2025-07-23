@@ -16,12 +16,29 @@ The **Dementia Association of Zimbabwe (DAZ)** website is designed to create awa
 
 ## Tech Stack
 This project is built with:
-- **Framework:** [Next.js](https://nextjs.org/) (version 15.3)
+
+### Frontend
+- **Framework:** [Vite](https://vitejs.dev/) with React
 - **Language:** TypeScript
-- **Styling:** TailwindCSS
-- **State Management:** React Context API
-- **Hosting:** Vercel
-- **Other Tools:** Google Analytics, SEO meta tags for search engine optimization
+- **Styling:** Tailwind CSS, shadcn-ui
+- **Animation:** Framer Motion
+- **Routing:** React Router
+- **Form Handling:** React Hook Form with Zod validation
+
+### Backend
+- **Framework:** Express.js
+- **Language:** TypeScript
+- **Database:** MongoDB with Mongoose
+- **Authentication:** JWT (JSON Web Tokens)
+- **File Upload:** Multer
+- **Email:** Nodemailer
+- **Security:** Helmet, CORS, Rate Limiting
+
+### DevOps & Deployment
+- **Hosting:** Vercel (Frontend), Railway/Heroku (Backend)
+- **Version Control:** Git & GitHub
+- **CI/CD:** GitHub Actions
+- **Monitoring:** Google Analytics
 
 ## Getting Started
 
@@ -51,33 +68,83 @@ This project is built with:
 ## Usage
 
 ### Development Server
-Run the local development server:
+
+#### Frontend
+Navigate to the frontend directory and start the development server:
 ```bash
+cd frontend
 npm run dev
 ```
-The site will be available at `http://localhost:8080`.
+The frontend will be available at `http://localhost:5173`.
+
+#### Backend
+Navigate to the backend directory and start the API server:
+```bash
+cd backend
+npm run dev
+```
+The backend API will be available at `http://localhost:5000`.
 
 ### Build
+
+#### Frontend
 To create an optimized production build:
 ```bash
+cd frontend
 npm run build
+```
+
+#### Backend
+To build the backend for production:
+```bash
+cd backend
+npm run build
+npm start
 ```
 
 ## Project Structure
 ```
-dementia-awareness/
-├── public/              # Static assets (images, logos, etc.)
-├── src/
-│   ├── components/      # Reusable React components
-│   ├── pages/           # Next.js pages for routing
-│   ├── styles/          # Styling (global and page-specific)
-│   ├── utils/           # Helper functions (e.g., API calls)
-│   ├── types/           # TypeScript type definitions
-│   ├── contexts/        # State management files
-├── .env                 # Environment variables
-├── package.json         # Project metadata and dependencies
-├── tsconfig.json        # TypeScript configuration
-├── next.config.js       # Next.js configuration
+daz-dementia-hub/
+├── frontend/            # React/Vite frontend application
+│   ├── public/          # Static assets (images, logos, etc.)
+│   ├── src/
+│   │   ├── components/  # Reusable React components
+│   │   │   ├── ui/      # shadcn-ui components
+│   │   ├── auth/        # Authentication components
+│   │   │   ├── login/   # Login form component
+│   │   │   └── signup/  # Signup form component
+│   │   ├── pages/       # Page components
+│   │   ├── layouts/     # Layout components
+│   │   ├── hooks/       # Custom React hooks
+│   │   ├── lib/         # Shared libraries and configurations
+│   │   ├── App.tsx      # Main application component
+│   │   └── main.tsx     # Entry point
+│   ├── package.json     # Frontend dependencies
+│   ├── tsconfig.json    # TypeScript configuration
+│   ├── vite.config.ts   # Vite configuration
+│   └── tailwind.config.ts # Tailwind CSS configuration
+├── backend/             # Express.js backend API
+│   ├── src/
+│   │   ├── controllers/ # Request handlers
+│   │   ├── routes/      # API routes
+│   │   ├── models/      # Database models
+│   │   ├── middleware/  # Custom middleware
+│   │   ├── services/    # Business logic
+│   │   ├── utils/       # Helper functions
+│   │   ├── config/      # Configuration files
+│   │   ├── types/       # TypeScript types
+│   │   └── index.ts     # Entry point
+│   ├── tests/           # Backend tests
+│   ├── uploads/         # File uploads directory
+│   ├── package.json     # Backend dependencies
+│   ├── tsconfig.json    # TypeScript configuration
+│   └── .env.example     # Environment variables template
+├── shared/              # Shared code between frontend and backend
+│   ├── types/           # Shared TypeScript interfaces
+│   └── utils/           # Shared utility functions
+├── docs/                # Project documentation
+├── package.json         # Root package.json (workspace configuration)
+└── README.md           # This file
 ```
 
 ## Contributions
@@ -110,16 +177,4 @@ For any inquiries, feel free to reach out:
 
 **URL**: 
 
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-- html
-- css
-- Motion Framer
 
