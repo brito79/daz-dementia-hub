@@ -107,7 +107,7 @@ For any inquiries, feel free to reach out:
 - **Social Media:**
   - [Facebook](https://facebook.com/dementiaassociationzim)
   - [Twitter](https://twitter.com/DementiaAss-Zim)
-=======
+
 **URL**: 
 
 ## What technologies are used for this project?
