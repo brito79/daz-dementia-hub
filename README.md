@@ -1,13 +1,13 @@
-<<<<<<< HEAD
+
 # Dementia Awareness Website (DAZ)
-=======
+
 # Welcome to Dementia Association of Zimbabwe Awareness project
->>>>>>> 2cf582670e4efdf4040ce677f4a4308a8c4e7f36
+
 
 ## About the Project
 The **Dementia Association of Zimbabwe (DAZ)** website is designed to create awareness and advocate for the prevention, diagnosis, treatment, and management of dementia. The site aims to diminish stigma, provide resources for caregivers and families, and support ongoing research efforts.
 
-<<<<<<< HEAD
+
 ## Features
 - Informative content about dementia, including awareness campaigns, objectives, and research initiatives.
 - Services like counseling and home visits for families and caregivers.
@@ -122,4 +122,4 @@ This project is built with .
 - html
 - css
 - Motion Framer
->>>>>>> 2cf582670e4efdf4040ce677f4a4308a8c4e7f36
+
