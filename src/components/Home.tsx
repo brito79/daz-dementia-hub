@@ -2,11 +2,8 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { ChatAssistant } from "./ChatAssistant";
-import bg_home from "/assets/bg_hero.jpg";
 import AboutUs from "@/pages/AboutUs";
-import { Footer } from "./Footer";
 import { Causes } from "./Causes";
-import { MembershipForm } from "./MembershipForm";
 import MembershipPage from "@/pages/MembershipPage";
 import FaQ from "./FaQ";
 
@@ -16,14 +13,6 @@ export const Home = () => {
   return (
     <>
     <section className="bg-gradient-to-br from-purple-500 to-blue-500 bg-center bg-cover h-screen relative min-h-screen flex items-center justify-center overflow-hidden bg-daz-blue/5 rounded-lg shadow-lg">
-    {/*
-    style={{
-      backgroundImage: `url(${bg_home})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      }}
-    */}
-    {/* Arc SVG */}
     <svg
         className="absolute bottom-0 w-full"
         xmlns="http://www.w3.org/2000/svg"
@@ -43,11 +32,14 @@ export const Home = () => {
           className="text-center max-w-4xl mx-auto"
         >
           <div className="mb-8">
-        <img
-          src="/assets/2cc117a5-2e72-4a68-9375-6243c2b5e6fb.png"
-          alt="DAZ Logo"
-          className="w-32 h-32 mx-auto mb-6 drop-shadow-lg"
-        />
+            <img
+              src="/assets/2cc117a5-2e72-4a68-9375-6243c2b5e6fb.png"
+              alt="DAZ Logo"
+              className="w-32 h-32 mx-auto mb-6 drop-shadow-lg rounded-full bg-white p-2 shadow-lg"
+              style={{
+                boxShadow: "0 0 30px rgba(139, 92, 246, 0.3), 0 0 15px rgba(59, 130, 246, 0.2)"
+              }}
+            />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-daz-blue mb-6">
         Dementia Association of Zimbabwe
