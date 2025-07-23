@@ -102,36 +102,42 @@ export const About = () => {
 
             <div className="mt-16">
               <h3 className="text-3xl font-bold text-daz-blue mb-8 text-center">
-                Our Team
+              Our Team
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {teamMembers.map((member, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    className="bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
-                  >
-                    <div className="flex flex-col items-center mb-4">
-                      <div className="w-48 h-50 rounded-full overflow-hidden mb-2">
-                        <img
-                          src={member.image}
-                          alt={member.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <h4 className="text-xl font-semibold text-daz-green">
-                        {member.name}
-                      </h4>
-                      <p className="text-gray-600 font-medium mb-4">{member.role}</p>
-                    </div>
-                    <p className="text-gray-600 text-sm leading-relaxed">
-                      {member.description}
-                    </p>
-                  </motion.div>
-                ))}
+              {teamMembers.map((member, index) => (
+                <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className={`bg-white/90 backdrop-blur-sm p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ${
+                  teamMembers.length % 3 === 1 && index === teamMembers.length - 1 
+                  ? "lg:col-start-2" 
+                  : (teamMembers.length % 3 === 2 && index === teamMembers.length - 2) 
+                    ? "lg:col-start-1" 
+                    : ""
+                }`}
+                >
+                <div className="flex flex-col items-center mb-4">
+                  <div className="w-48 h-50 rounded-full overflow-hidden mb-2">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                  </div>
+                  <h4 className="text-xl font-semibold text-daz-green">
+                  {member.name}
+                  </h4>
+                  <p className="text-gray-600 font-medium mb-4">{member.role}</p>
+                </div>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {member.description}
+                </p>
+                </motion.div>
+              ))}
               </div>
             </div>
 
