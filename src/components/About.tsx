@@ -6,7 +6,7 @@ export const About = () => {
     {
       name: "Emelia Gubba",
       role: "Co-Founder",
-      image: "/assets/6e1ac777-304d-4c58-a76f-0134b3a72156.png",
+      image: "/assets/emeila_gubba.jpg",
       description: "Is passionate about humanitarian work with special interest in elderly care, has worked in the health sector and other related organisations. Holds qualifications in monitoring & evalution and Marketing.",
     },
     {
